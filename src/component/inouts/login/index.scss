@@ -1,0 +1,42 @@
+.inputs{
+
+    .usuario{
+        padding-bottom: 2.063rem;
+        .usuario_email{
+            border-radius: 50px;
+            width: 22.063rem;
+            height: 3.75rem;
+            font-size: 1rem;
+            color: #E0E0E0;
+            background-color: transparent;
+            border: 0.063rem solid #FFFFFF;
+            padding-left: 1.25rem;
+            &::placeholder{
+                font-size: 1rem;
+                color: #E0E0E0;
+                
+            }
+           }
+    }
+   
+    .senha{
+        padding-bottom: 7.188rem;
+        
+        .senha_password{
+            border-radius: 50px;
+            width: 22.063rem;
+            height: 3.75rem;
+            font-size: 1rem;
+            color: #E0E0E0;
+            background-color: transparent;
+            border: 0.063rem solid #FFFFFF;
+            padding-left: 1.25rem;
+            &::placeholder{
+                font-size: 1rem;
+                color: #E0E0E0;
+
+            }
+           }
+    }
+   
+}
