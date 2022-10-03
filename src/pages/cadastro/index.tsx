@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import  './index.scss';
-import Botao from '../../component/botoes/continuar';
+import Botao from '../../component/botoes/cadastrar';
 import Input from '../../component/inouts/login';
-import logoP from '../../assets/cadastro/logoB.svg'
-import img_inicial from '../../assets/cadastro/img_inicial.png'
+import logoP from '../../assets/cadastro/logop.svg';
+import img_inicial from '../../assets/cadastro/img_inicial.png';
+import icon_user from '../../assets/cadastro/icon_user.svg'
+import icon_password from '../../assets/cadastro/icon_password.svg'
 
 
 function Cadastro() {

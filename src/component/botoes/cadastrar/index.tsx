@@ -3,17 +3,17 @@ import  "./index.scss"
 import {useNavigate} from 'react-router-dom'
 
 
-function Botao (){
+function Botao_continuar (){
 
-    const navigate = useNavigate();
+    const continuar = useNavigate();
 
     return(
         <div className="continuar">
-            <button onClick={() => navigate('/home')}>
+            <button onClick={() => continuar('/home')}>
                 Contnuar
             </button>
         </div>
     )
 }
 
-export default Botao
+export default Botao_continuar
