@@ -10,9 +10,22 @@
     .P{
         
         font-style: normal;
-        text-align: center;
+        
        
           
     }
 }
 
+@media (min-width: 280px) and (max-width: 653px){
+    .time{
+
+       .Time_refresh{
+        font-size: 29px;
+        padding-top: 0.3rem;
+       }
+       
+       p{
+        font-size: 0.7rem;
+       }
+    }
+}

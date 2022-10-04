@@ -17,3 +17,23 @@
         
     }
 }
+
+@media (min-width: 280px) and (max-width: 653px){
+    .button{
+        width: 8rem;
+        height: 4rem;
+        padding-left: 1rem;
+        .continuar_navegando{
+            background-color: #ffffff;
+            width: 50%;
+            height: 100%;
+            color: red;   
+            font-size: 0.7rem;
+        }
+
+        .logout{
+            width: 50%;
+            font-size: 0.7rem;
+        }
+    }
+}

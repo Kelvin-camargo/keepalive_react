@@ -1,14 +1,42 @@
 import { useState } from 'react';
 import  './index.scss';
-import Botao from '../../component/botoes/cadastrar';
+
 import Input from '../../component/inouts/login';
 import logoP from '../../assets/cadastro/logop.svg';
 import img_inicial from '../../assets/cadastro/img_inicial.png';
-import icon_user from '../../assets/cadastro/icon_user.svg'
-import icon_password from '../../assets/cadastro/icon_password.svg'
+import { useNavigate } from 'react-router-dom';
+
 
 
 function Cadastro() {
+
+const continuar = useNavigate();
+
+const [email, setEmail] = useState<string>('');
+    const [senha, setSenha] = useState<string>('');
+    const [invalidError, setInvalidError] = useState<boolean>(false);
+    const [focus, setFocus] = useState({
+      username: false,
+      password: false,
+  });
+    const usernameref:any = (null)
+    const passwordref:any = (null)
+
+
+function validation (){
+
+  let Regex = /[^@ \t\r\n]+@[^@ \t\r\n]+.[^@ \t\r\n]+/
+
+
+  if (Regex.test(email) && senha.length > 3) {
+    setInvalidError(false)
+    continuar('/home')
+} else {
+  setInvalidError(true)
+}
+ 
+}
+
   const [count, setCount] = useState(0)
 
   return (
@@ -23,8 +51,15 @@ function Cadastro() {
 
         <h2>Login</h2>
 
-        <Input />
-        <Botao />
+        
+        <Input email={email} senha={senha} setEmail={setEmail} setSenha={setSenha}/>
+        {invalidError? <span style={{color:'#E9B425'}}>Ops, usuário ou senha inválidos.<br/> Tente novamente!</span>:<span></span>}
+        
+
+        <div className="continuar">
+          <button onClick={ validation }>continuar</button>
+        </div>
+        
       </div>
 
       <div className='cadastro_imagem'>

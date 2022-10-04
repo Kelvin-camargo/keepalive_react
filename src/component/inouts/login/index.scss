@@ -2,6 +2,14 @@
 
     .usuario{
         padding-bottom: 2.063rem;
+        display: flex;
+        width: 24.813;
+        .icon_user{
+            padding-top: 1rem;
+            padding-left: 1.125rem;
+        }
+
+        
         .usuario_email{
             border-radius: 50px;
             width: 22.063rem;
@@ -21,7 +29,17 @@
    
     .senha{
         padding-bottom: 7.188rem;
-        
+        display: flex;
+
+   
+        .icon_password{
+            
+            padding-left: 1.125rem;
+            padding-top: 1rem;
+            
+            
+
+        }
         .senha_password{
             border-radius: 50px;
             width: 22.063rem;
@@ -39,4 +57,52 @@
            }
     }
    
+}
+
+@media (min-width: 280px) and (max-width: 653px){
+    .usuario{
+        .icon_user{
+            padding-left: 1rem;
+        }
+        
+        .usuario_email{
+            
+            width: 160px!important;
+            height: 35px !important;
+            font-size: 0.9rem;
+            color: #E0E0E0;
+            background-color: transparent;
+            border: 0.063rem solid #FFFFFF;
+            padding-left: 1.25rem;
+            &::placeholder{
+                font-size: 0.9rem;
+                color: #E0E0E0;
+                
+            }
+           }
+    }
+   
+    .senha{
+        padding-bottom: 7.188rem;
+        display: flex;
+        align-items: center;
+        .icon_user{
+            padding-left: 1rem;
+        }
+        .senha_password{
+            width: 160px!important;
+            height: 35px !important;
+            font-size: 0.9rem;
+            
+            color: #E0E0E0;
+            background-color: transparent;
+            border: 0.063rem solid #FFFFFF;
+            padding-left: 1.25rem;
+            &::placeholder{
+                font-size: 0.9rem!important;
+                color: #E0E0E0;
+
+            }
+           }
+    }
 }
