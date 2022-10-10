@@ -10,7 +10,7 @@ export default function Time_refresh() {
     useEffect(() => {
         setTimeout(() => {
             setTime(time - 1);
-            if (time == 0) navigate('/home');
+            if (time == 0) navigate('/');
         }, 1000);
     }, [time]);
 

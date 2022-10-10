@@ -1,10 +1,13 @@
 import 'react';
 import "./index.scss";
 import logop from '../../assets/home/logop.svg';
+import Temperatura from '../../assets/home/temperatura.svg';
 import bola_logo from '../../assets/home/bola_logo.svg';
 import Botoes from '../../component/botoes/home/home_button';
 import Time_refresh from '../../component/time_refresh';
 import Time_date from '../../component/time_date';
+
+
 
 
 function Home(){
@@ -18,7 +21,9 @@ function Home(){
                     <Time_date />
                 </div>
              
-                <div className="temperature">temperatura</div>
+                <div className="temperature">
+                    <img src={Temperatura} alt="" />
+                </div>
             </header>
 
 

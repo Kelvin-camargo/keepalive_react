@@ -61,6 +61,7 @@
 
 @media (min-width: 280px) and (max-width: 653px){
     .usuario{
+        max-width: 280px;
         .icon_user{
             padding-left: 1rem;
         }
@@ -83,7 +84,7 @@
     }
    
     .senha{
-        padding-bottom: 7.188rem;
+        padding-bottom: 4rem;
         display: flex;
         align-items: center;
         .icon_user{
